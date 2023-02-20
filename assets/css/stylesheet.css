@@ -1,6 +1,20 @@
 body {background-color: antiquewhite;}
         h1{color: gray;}
-        #nim {padding: 5%;}
+        #nim {padding: 5;}
         #nama {color: red;}
-        table {margin-top: 2px; }
         .form {color: orange;}
+        table {
+                font-family: arial, sans-serif;
+                border-collapse: separate;
+                width: 100%;
+              }
+              
+              td, th {
+                border:1px dashed black;
+                text-align: left;
+                padding: 8px;
+              }
+              
+              tr:nth-child(even) {
+                background-color: #dddddd;
+              }
