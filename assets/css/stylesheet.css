@@ -1,20 +1,35 @@
-body {background-color: antiquewhite;}
-        h1{color: gray;}
-        #nim {padding: 5;}
-        #nama {color: red;}
-        .form {color: orange;}
-        table {
-                font-family: arial, sans-serif;
-                border-collapse: separate;
-                width: 100%;
-              }
+body {
+        background-color: antiquewhite;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+ table {
+        font-family: arial, sans-serif;
+        border-collapse: separate;
+        width: 100%;
+        }
               
-              td, th {
-                border:1px dashed black;
-                text-align: left;
-                padding: 8px;
-              }
+td, th {
+        border:1px dashed black;
+        text-align: left;
+        padding: 8px;
+        }
               
-              tr:nth-child(even) {
-                background-color: #dddddd;
-              }
+tr:nth-child(even) 
+        {
+        background-color: #dddddd;
+        }
+
+input[type="text"]
+        {
+        width: 250px;
+        padding: 10px;
+        border-radius: 10px;
+        color: red;
+        }
+
+input[type="text"]:hover{background-color: lightblue;}
+
+#nama {text-decoration: underline;} 
+#nim {text-decoration: underline;}
+
