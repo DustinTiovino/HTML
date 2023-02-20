@@ -2,35 +2,42 @@
 <html>
 <head>
     <title>Document</title>
+    <style type="text/css">
+        body {background-color: aqua;}
+        h1{color: azure;}
+        #nim {padding: 5%;}
+        #nama {color: red;}
+        table {margin-top: 2px; }
+        .form {color: orange;}
+    </style>
 </head>
 <body>
     <h1>Data Diri</h1>
     <br>
+    <table>
     <tr>
-        <td>
-        nama :
-        </td> 
-            <input type="text" name = "nama" id="nama">
-            <br>
-        nim : 
-            <input type="text" name="nim" id="nim" value="" maxlength="9" size="9">
-            <br>
-            <td>Jenis Kelamin :
-            
-            <input type="radio" name="jenis_kelamin" id="jenis_kelamin1" value="L">Laki-laki
-            
-            <input type="radio" name="jenis_kelamin" id="jenis_kelamin2" value="P">Perempuan</td>
-            <br>
-            <br>
-            Hobi :
-            <br>
-            <input type="checkbox" name="hobi1" id="hobi1" value="masak">masak <br>
-            <input type="checkbox" name="hobi2" id="hobi2" value="makan">makan <br>
-            <input type="checkbox" name="hobi3" id="hobi3" value="tidok">tidok <br>
-            <input type="checkbox" name="hobi4" id="hobi4" value="gulingguling">gulingguling <br>
-            <input type="checkbox" name="hobi5" id="hobi5" value="main game">main game <br>
-            <input type="checkbox" name="hobi6" id="hobi6" value="jalanjalan">jalanjalan <br>
-            <input type="checkbox" name="hobi7" id="hobi7" value="belajar">belajar <br></td>
+        <td> nama </td> 
+        <td>:<input type="text" name = "nama" id="nama" placeholder="nama" class="form"></td>
     </tr>
+    <tr> 
+        <td>nim</td> 
+        <td>:<input type="text" name="nim" id="nim" value="" maxlength="9" size="9" placeholder="nim" class="form"></td>
+    </tr>
+    <tr>        
+        <td>Jenis Kelamin</td> 
+        <td>:<input type="radio" name="jenis_kelamin" id="jenis_kelamin1" value="L">Laki-laki
+            <input type="radio" name="jenis_kelamin" id="jenis_kelamin2" value="P">Perempuan</td>
+    </tr>      
+    <tr>        
+            <td>Hobi</td> 
+            <td>:<input type="checkbox" name="hobi1" id="hobi1" value="masak">masak
+            <input type="checkbox" name="hobi2" id="hobi2" value="makan">makan
+            <input type="checkbox" name="hobi3" id="hobi3" value="tidok">tidok
+            <input type="checkbox" name="hobi4" id="hobi4" value="gulingguling">gulingguling
+            <input type="checkbox" name="hobi5" id="hobi5" value="main game">main game
+            <input type="checkbox" name="hobi6" id="hobi6" value="jalanjalan">jalanjalan
+            <input type="checkbox" name="hobi7" id="hobi7" value="belajar">belajar</td>
+    </tr>
+</table>
 </body>
 </html>
