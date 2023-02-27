@@ -48,11 +48,19 @@
 <script type="text/javascript">
     function klik(namatombol) {
        if(namatombol == "submit"){
-        alert("data tersimpan!");
+        SimpanData();
        }
        else if(namatombol == "reset") {
         alert("data direset!");
        }
+    }
+
+    function SimpanData(){
+        var Nama = document.getElementById("nama").value;
+        var Nim = document.getElementById("nim").value;
+        var JenisKelamin = document.getElementsByName("jenis_kelamin").value;
+
+        alert("Nama : "+ Nama + " Nim : " + Nim + " Jenis Kelamin : "+ JenisKelamin +" Data tersimpan!");
     }
 </script>
 </html>
