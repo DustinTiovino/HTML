@@ -5,7 +5,12 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body>
-    <h1>Data Diri</h1>
+    <div id="header">
+        <div id="Logo">
+            <img src="assets/images/Hologram.png" width="100%" height="100%" alt="Hologram"></div>
+        <div id="Judul"><h1>Data Diri</h1></div>
+    </div>
+    <form>
     <br>
     <table>
     <tr>
@@ -31,6 +36,23 @@
             <input type="checkbox" name="hobi6" id="hobi6" value="jalanjalan">jalanjalan
             <input type="checkbox" name="hobi7" id="hobi7" value="belajar">belajar</td>
     </tr>
+    <tr>
+        <td colspan="2" style="border: 0px;">
+        <input type="submit" id="submit" value="submit" class="button" onclick="klik(this.value)">
+        <input type="reset" id="reset" value="reset" class="button" onclick="klik(this.value)">
+        </td>
+    </tr>
 </table>
+</form>
 </body>
+<script type="text/javascript">
+    function klik(namatombol) {
+       if(namatombol == "submit"){
+        alert("data tersimpan!");
+       }
+       else if(namatombol == "reset") {
+        alert("data direset!");
+       }
+    }
+</script>
 </html>

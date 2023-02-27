@@ -25,7 +25,7 @@ body {
         }
               
 td, th {
-        border:1px dashed black;
+        border:1px solid black;
         text-align: left;
         padding: 8px;
         }
@@ -45,10 +45,29 @@ input[type="text"]
 
 input[type="text"]:hover{background-color: lightblue;}
 
-input[type="radio"]:hover{background-color: lightgreen;}
-
 #nama {text-decoration: underline;} 
 #nim {text-decoration: underline;}
 
 #nama {font-family: HandWrite; font-size: large;}
 #nim {font-family: HandWrite; font-size: large;}
+
+#header {width: 100%;}
+#Logo {width: 5%;
+float: left;
+padding-left: 2px;}
+
+#Judul {width: 10%;
+float: left;
+padding-top: 8px;
+padding-left: 2px;}
+
+.button {background-color: blue;
+width: 300px;
+border-radius: 5px;
+border: none;
+color: white;
+font-weight: bold;
+cursor: pointer;}
+
+.button:hover{background-color: rgb(2, 2, 71);}
+
