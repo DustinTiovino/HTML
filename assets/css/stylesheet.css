@@ -1,10 +1,25 @@
+@font-face {
+        font-family: Centurion;
+        src: url(../fonts/Centurion.otf);
+}
+
+@font-face {
+        font-family: Smile;
+        src: url(../fonts/Smile.otf);
+}
+
+@font-face {
+        font-family: HandWrite;
+        src: url(../fonts/HandWrite.otf);
+}
+
 body {
         background-color: antiquewhite;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: Smile;
         }
 
  table {
-        font-family: arial, sans-serif;
+        font-family: Centurion;
         border-collapse: separate;
         width: 100%;
         }
@@ -25,11 +40,15 @@ input[type="text"]
         width: 250px;
         padding: 10px;
         border-radius: 10px;
-        color: red;
+        color: black;
         }
 
 input[type="text"]:hover{background-color: lightblue;}
 
+input[type="radio"]:hover{background-color: lightgreen;}
+
 #nama {text-decoration: underline;} 
 #nim {text-decoration: underline;}
 
+#nama {font-family: HandWrite; font-size: large;}
+#nim {font-family: HandWrite; font-size: large;}
