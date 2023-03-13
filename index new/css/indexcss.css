@@ -1,0 +1,52 @@
+/* Style 1 */
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2ad50b;
+  width: 120px;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover,
+a:active {
+  background-color: #7A991A;
+} */
+
+/* Style 2 */
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+li {
+  display: inline;
+}
+a:link,
+a:visited {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #98bf21;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover,
+a:active {
+  background-color: #7a991a;
+} */
