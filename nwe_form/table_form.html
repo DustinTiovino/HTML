@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="tabel">
+    <form>
+        <table border="1px" style="border-collapse: collapse; height: auto; width: 30%;">
+            <thead>
+                <tr>
+                 <th></th>
+                <th>no</th>
+                <th>nama</th>
+                <th colspan="2">harga</th>
+                <th colspan="2">jumlah</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" id="checkbox1" onclick="jumlah()"></td>
+                    <td>1</td>
+                    <td>aaaa</td>
+                    <td>@</td>
+                    <td><input type="number" id="1" value="0" onkeyup="jumlah()"></td>
+                    <td>@</td>
+                    <td><input type="number" id="jumlah1" value="0" onkeyup="jumlah()"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="checkbox2" onclick="jumlah()"></td>
+                    <td>2</td>
+                    <td>aaaa</td>
+                    <td>@</td>
+                    <td><input type="number" id="2" value="0" onkeyup="jumlah()"></td>
+                    <td>@</td>
+                    <td><input type="number" id="jumlah2" value="0" onkeyup="jumlah()"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="checkbox3" onclick="jumlah()"></td>
+                    <td>3</td>
+                    <td>aaaa</td>
+                    <td>@</td>
+                    <td><input type="number" id="3" value="0" onkeyup="jumlah()"></td>
+                    <td>@</td>
+                    <td><input type="number" id="jumlah3" value="0" onkeyup="jumlah()"></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="6" style="text-align-last: center;">jumlah</td>
+                    <td><input type="number" id="jumlah_total" value="0" onkeyup="jumlah()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+function jumlah()
+{
+    var checkbox1 = document.getElementById("checkbox1").checked;
+    var harga1 = document.getElementById ("1").value;
+    var jumlah1 = document.getElementById("jumlah1").value;
+
+    var checkbox1 = document.getElementById("checkbox2").checked;
+    var harga2 = document.getElementById ("2").value;
+    var jumlah2 = document.getElementById("jumlah2").value;
+
+    var checkbox1 = document.getElementById("checkbox3").checked;
+    var harga3 = document.getElementById ("3").value;
+    var jumlah3 = document.getElementById("jumlah3").value;
+    
+    var total1 = 0;
+    var total2 = 0;
+    var total3 = 0;
+
+    
+    if(checkbox1 == true){
+              if(harga1!="" && jumlah1!=""){
+                total1= parseInt(harga1) * parseInt(jumlah1)
+              }
+          }
+
+          if(checkbox2 == true){
+              if(harga2!="" && jumlah2!=""){
+                total2 = parseInt(harga2) * parseInt(jumlah2)
+              }
+          }
+
+          if(checkbox3 == true) {
+              if(harga3!="" && jumlah3!=""){
+                total3 = parseInt(harga3) * parseInt(jumlah3)
+              }
+          }
+
+
+          document.getElementById("jumlah_total").value = (total1 + total2 + total3).toLocaleString('id');
+        }
+</script>
+</html>

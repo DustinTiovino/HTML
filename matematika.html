@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">bilangan1<input type="text" id="bil1"></td>
+        </tr>
+        <tr>
+            <td colspan="4">bilangan2<input type="text" id="bil2"></td>
+        </tr>
+        <tr>
+            <td onclick="tambah()">+</td>
+            <td onclick="kurang()">-</td>
+            <td onclick="kali()">*</td>
+            <td onclick="bagi()">/</td>
+        </tr>
+        <tr>
+            <td colspan="4">total<input type="text" id="total"></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+    function tambah()
+    {
+        var bilangan1 = parseInt(document.getElementById("bil1").value);
+        var bilangan2 = parseInt(document.getElementById("bil2").value);
+
+        var total = bilangan1 + bilangan2;
+        document.getElementById("total").value = total;
+    }
+    function kurang()
+    {
+        var bilangan1 = parseInt(document.getElementById("bil1").value);
+        var bilangan2 = parseInt(document.getElementById("bil2").value);
+
+        var total = bilangan1 - bilangan2;
+        document.getElementById("total").value = total;
+    }
+    function kali()
+    {
+        var bilangan1 = parseInt(document.getElementById("bil1").value);
+        var bilangan2 = parseInt(document.getElementById("bil2").value);
+
+        var total = bilangan1 * bilangan2;
+        document.getElementById("total").value = total;
+    }
+    function bagi()
+    {
+        var bilangan1 = parseInt(document.getElementById("bil1").value);
+        var bilangan2 = parseInt(document.getElementById("bil2").value);
+
+        var total = bilangan1 / bilangan2;
+        document.getElementById("total").value = total;
+    }
+</script>
+</html>
